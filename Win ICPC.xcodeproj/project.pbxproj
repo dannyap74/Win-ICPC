@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2A814322CCD64200B68888 /* SubThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A814222CCD64200B68888 /* SubThemeViewController.swift */; };
+		1E2A814522CCDC9200B68888 /* SubThemeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A814422CCDC9200B68888 /* SubThemeViewCell.swift */; };
 		1E79A1D922CB9E9600721B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E79A1D822CB9E9600721B15 /* AppDelegate.swift */; };
 		1E79A1DB22CB9E9600721B15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E79A1DA22CB9E9600721B15 /* ViewController.swift */; };
 		1E79A1DE22CB9E9600721B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1DC22CB9E9600721B15 /* Main.storyboard */; };
 		1E79A1E022CB9E9900721B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1DF22CB9E9900721B15 /* Assets.xcassets */; };
 		1E79A1E322CB9E9900721B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1E122CB9E9900721B15 /* LaunchScreen.storyboard */; };
-		1E79A1EE22CB9E9900721B15 /* Win_ICPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E79A1ED22CB9E9900721B15 /* Win_ICPCTests.swift */; };
-		1E79A1F922CB9E9900721B15 /* Win_ICPCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E79A1F822CB9E9900721B15 /* Win_ICPCUITests.swift */; };
+		1ECC9E0722CCBDE300AA57C5 /* ThemeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC9E0622CCBDE300AA57C5 /* ThemeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2A814222CCD64200B68888 /* SubThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubThemeViewController.swift; sourceTree = "<group>"; };
+		1E2A814422CCDC9200B68888 /* SubThemeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubThemeViewCell.swift; sourceTree = "<group>"; };
 		1E79A1D522CB9E9600721B15 /* Win ICPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Win ICPC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E79A1D822CB9E9600721B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E79A1DA22CB9E9600721B15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +45,8 @@
 		1E79A1E222CB9E9900721B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E79A1E422CB9E9900721B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E79A1E922CB9E9900721B15 /* Win ICPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Win ICPCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E79A1ED22CB9E9900721B15 /* Win_ICPCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win_ICPCTests.swift; sourceTree = "<group>"; };
-		1E79A1EF22CB9E9900721B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E79A1F422CB9E9900721B15 /* Win ICPCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Win ICPCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E79A1F822CB9E9900721B15 /* Win_ICPCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win_ICPCUITests.swift; sourceTree = "<group>"; };
-		1E79A1FA22CB9E9900721B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECC9E0622CCBDE300AA57C5 /* ThemeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				1E79A1D722CB9E9600721B15 /* Win ICPC */,
-				1E79A1EC22CB9E9900721B15 /* Win ICPCTests */,
-				1E79A1F722CB9E9900721B15 /* Win ICPCUITests */,
 				1E79A1D622CB9E9600721B15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +95,17 @@
 		1E79A1D722CB9E9600721B15 /* Win ICPC */ = {
 			isa = PBXGroup;
 			children = (
+				1ECC9E0622CCBDE300AA57C5 /* ThemeViewCell.swift */,
 				1E79A1D822CB9E9600721B15 /* AppDelegate.swift */,
 				1E79A1DA22CB9E9600721B15 /* ViewController.swift */,
+				1E2A814422CCDC9200B68888 /* SubThemeViewCell.swift */,
 				1E79A1DC22CB9E9600721B15 /* Main.storyboard */,
 				1E79A1DF22CB9E9900721B15 /* Assets.xcassets */,
 				1E79A1E122CB9E9900721B15 /* LaunchScreen.storyboard */,
 				1E79A1E422CB9E9900721B15 /* Info.plist */,
+				1E2A814222CCD64200B68888 /* SubThemeViewController.swift */,
 			);
 			path = "Win ICPC";
-			sourceTree = "<group>";
-		};
-		1E79A1EC22CB9E9900721B15 /* Win ICPCTests */ = {
-			isa = PBXGroup;
-			children = (
-				1E79A1ED22CB9E9900721B15 /* Win_ICPCTests.swift */,
-				1E79A1EF22CB9E9900721B15 /* Info.plist */,
-			);
-			path = "Win ICPCTests";
-			sourceTree = "<group>";
-		};
-		1E79A1F722CB9E9900721B15 /* Win ICPCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1E79A1F822CB9E9900721B15 /* Win_ICPCUITests.swift */,
-				1E79A1FA22CB9E9900721B15 /* Info.plist */,
-			);
-			path = "Win ICPCUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECC9E0722CCBDE300AA57C5 /* ThemeViewCell.swift in Sources */,
 				1E79A1DB22CB9E9600721B15 /* ViewController.swift in Sources */,
+				1E2A814522CCDC9200B68888 /* SubThemeViewCell.swift in Sources */,
 				1E79A1D922CB9E9600721B15 /* AppDelegate.swift in Sources */,
+				1E2A814322CCD64200B68888 /* SubThemeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E79A1EE22CB9E9900721B15 /* Win_ICPCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E79A1F922CB9E9900721B15 /* Win_ICPCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

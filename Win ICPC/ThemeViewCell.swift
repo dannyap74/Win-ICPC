@@ -12,6 +12,7 @@ class ThemeTableViewCell: UITableViewCell{
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var themeProg: UIProgressView!
     @IBOutlet weak var clLabel: UILabel!
+    @IBOutlet weak var perLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -23,7 +24,8 @@ class ThemeTableViewCell: UITableViewCell{
         themeLabel.text = item.name
         themeProg.setProgress(Float(1), animated: false)
         clLabel.text = "Уроков: \(item.subthemes.count)"
-        
+        perLabel.text = "\(Int(item.level().0/item.level().1)) %"
+        themeProg.transform = themeProg.transform.scaledBy(x: 1, y: 5)
     }
     
 }

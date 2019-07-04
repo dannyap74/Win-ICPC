@@ -1,0 +1,6 @@
+framework module Pods_Win_ICPCTests {
+  umbrella header "Pods-Win ICPCTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

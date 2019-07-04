@@ -96,7 +96,7 @@ var arrTheme: [Theme] = [
             tasks: ["http://informatics.mccme.ru/py-source/source/dir/240-396"]
         ),
         Subtheme(
-            name: "Одномерное динамическое \nпрограммирование",
+            name: "Одномерное динамическое программирование",
             description: "Динамическое программирование на одномерных массивах",
             material: [("FOXFORD", "http://foxford.ru/wiki/informatika/odnomernoe-dinamicheskoe-programmirovanie-nailuchshiy-sposob"),
                        ("FOXFORD", "http://foxford.ru/wiki/informatika/odnomernoe-dinamicheskoe-programmirovanie-kolichestvo-sposobov"),

@@ -14,7 +14,9 @@
 		1E79A1DE22CB9E9600721B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1DC22CB9E9600721B15 /* Main.storyboard */; };
 		1E79A1E022CB9E9900721B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1DF22CB9E9900721B15 /* Assets.xcassets */; };
 		1E79A1E322CB9E9900721B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A1E122CB9E9900721B15 /* LaunchScreen.storyboard */; };
+		1ECBA27D22CE7B2B00EBFE42 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBA27C22CE7B2B00EBFE42 /* MaterialTableViewCell.swift */; };
 		1ECC9E0722CCBDE300AA57C5 /* ThemeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC9E0622CCBDE300AA57C5 /* ThemeViewCell.swift */; };
+		1EF3B61122CE29750047F07C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B61022CE29750047F07C /* PageViewController.swift */; };
 		453772A47272229876C67D6B /* Pods_Win_ICPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91ADCA9F79904A86BEDBDEB /* Pods_Win_ICPC.framework */; };
 		547F2B2589E079BB6A10A9F2 /* Pods_Win_ICPCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78BBA29AB08E3219F02B347 /* Pods_Win_ICPCUITests.framework */; };
 		E351B4EBF4D9610D55657179 /* Pods_Win_ICPCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074B33FDE1D38D67BE23C74A /* Pods_Win_ICPCTests.framework */; };
@@ -50,7 +52,9 @@
 		1E79A1E422CB9E9900721B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E79A1E922CB9E9900721B15 /* Win ICPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Win ICPCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E79A1F422CB9E9900721B15 /* Win ICPCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Win ICPCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECBA27C22CE7B2B00EBFE42 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
 		1ECC9E0622CCBDE300AA57C5 /* ThemeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewCell.swift; sourceTree = "<group>"; };
+		1EF3B61022CE29750047F07C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		2EC47AD09A6B872558130701 /* Pods-Win ICPCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Win ICPCUITests.debug.xcconfig"; path = "Target Support Files/Pods-Win ICPCUITests/Pods-Win ICPCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31223E001C86A9A5140F64A4 /* Pods-Win ICPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Win ICPC.release.xcconfig"; path = "Target Support Files/Pods-Win ICPC/Pods-Win ICPC.release.xcconfig"; sourceTree = "<group>"; };
 		611AA020D3FACE81333E6F03 /* Pods-Win ICPCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Win ICPCTests.debug.xcconfig"; path = "Target Support Files/Pods-Win ICPCTests/Pods-Win ICPCTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				1E79A1D822CB9E9600721B15 /* AppDelegate.swift */,
 				1E2A814422CCDC9200B68888 /* SubThemeViewCell.swift */,
 				1E79A1DC22CB9E9600721B15 /* Main.storyboard */,
+				1ECBA27C22CE7B2B00EBFE42 /* MaterialTableViewCell.swift */,
+				1EF3B61022CE29750047F07C /* PageViewController.swift */,
 				1E79A1DF22CB9E9900721B15 /* Assets.xcassets */,
 				1E79A1E122CB9E9900721B15 /* LaunchScreen.storyboard */,
 				1E79A1E422CB9E9900721B15 /* Info.plist */,
@@ -372,8 +378,10 @@
 				1ECC9E0722CCBDE300AA57C5 /* ThemeViewCell.swift in Sources */,
 				1E79A1DB22CB9E9600721B15 /* ViewController.swift in Sources */,
 				1E2A814522CCDC9200B68888 /* SubThemeViewCell.swift in Sources */,
+				1EF3B61122CE29750047F07C /* PageViewController.swift in Sources */,
 				1E79A1D922CB9E9600721B15 /* AppDelegate.swift in Sources */,
 				1E2A814322CCD64200B68888 /* SubThemeViewController.swift in Sources */,
+				1ECBA27D22CE7B2B00EBFE42 /* MaterialTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

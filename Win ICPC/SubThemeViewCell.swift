@@ -20,16 +20,9 @@ class SubthemeTableViewCell: UITableViewCell{
     func initWith(item: Subtheme){
         subthemeLabel.text = item.name
         subthemeLabel.numberOfLines = 0
-        var color: UIColor
-        switch item.stateOfTheme {
-        case -1:
-            color = UIColor.red
-        case 0:
-            color = UIColor.yellow
-        case 1:
+        var color = UIColor.white
+        if item.solved {
             color = UIColor.green
-        default:
-            color = UIColor.white
         }
         backgroundColor = color
         

@@ -41,4 +41,10 @@ extension SubThemeViewController{
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "page") as! PageViewController
+        newView.initViewp(data: d!.subthemes[indexPath.row])
+        show(newView, sender: nil)
+    }
 }
+

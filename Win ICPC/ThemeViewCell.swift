@@ -14,18 +14,29 @@ class ThemeTableViewCell: UITableViewCell{
     @IBOutlet weak var clLabel: UILabel!
     @IBOutlet weak var perLabel: UILabel!
     
+    var didTransform = false
+    
+    func progress() {
+            if !didTransform {
+                themeProg.transform = themeProg.transform.scaledBy(x: 1, y: 5)
+                didTransform = true
+            }
+        
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+        
     }
     
     func initWith(item: Theme){
         themeLabel.text = item.name
         themeProg.setProgress(Float(1), animated: false)
         clLabel.text = "Уроков: \(item.subthemes.count)"
-        perLabel.text = "\(Int(item.level().0/item.level().1)) %"
-        themeProg.transform = themeProg.transform.scaledBy(x: 1, y: 5)
+        print(item.level().0,item.level().1)
+        perLabel.text = "\(Int((item.level().0/item.level().1)*100)) %"
+        progress()
     }
     
 }

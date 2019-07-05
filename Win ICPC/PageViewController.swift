@@ -12,7 +12,7 @@ class PageViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var describtion: UILabel!
-    @IBOutlet weak var checkButton: UIButton!
+    //@IBOutlet weak var checkButton: UIButton!
     
     var d: Subtheme?
     
@@ -23,16 +23,16 @@ class PageViewController: UIViewController{
         super.viewDidLoad()
         name.text = d?.name
         describtion.text = d?.description
-        if d?.solved ?? false{
+        /*if d?.solved ?? false{
             checkButton.setTitle("Тема пройдена", for: .normal)
         }
         else{
             checkButton.setTitle("Тема не пройдена", for: .normal)
-        }
+        }*/
         tableView.dataSource = self
         tableView.delegate = self
     }
-    @IBAction func butPressed(_ sender: Any) {
+    /*@IBAction func butPressed(_ sender: Any) {
         if d?.solved == false{
             d?.resolve()
             checkButton.setTitle("Тема пройдена", for: .normal)
@@ -41,7 +41,7 @@ class PageViewController: UIViewController{
             d?.unsolve()
             checkButton.setTitle("Тема не пройдена", for: .normal)
         }
-    }
+    }*/
     
 }
 

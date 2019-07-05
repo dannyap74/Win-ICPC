@@ -24,7 +24,7 @@ class SubthemeTableViewCell: UITableViewCell{
         if item.solved {
             color = UIColor.green
         }
-        backgroundColor = color
+        //backgroundColor = color
         
     }
     

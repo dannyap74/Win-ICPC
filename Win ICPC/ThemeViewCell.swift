@@ -16,13 +16,13 @@ class ThemeTableViewCell: UITableViewCell{
     
     var didTransform = false
     
-    func progress() {
+    /*func progress() {
             if !didTransform {
                 themeProg.transform = themeProg.transform.scaledBy(x: 1, y: 5)
                 didTransform = true
             }
         
-    }
+    }*/
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
@@ -32,11 +32,11 @@ class ThemeTableViewCell: UITableViewCell{
     
     func initWith(item: Theme){
         themeLabel.text = item.name
-        themeProg.setProgress(Float(1), animated: false)
+        //themeProg.setProgress(Float(1), animated: false)
         clLabel.text = "Уроков: \(item.subthemes.count)"
-        print(item.level().0,item.level().1)
-        perLabel.text = "\(Int((item.level().0/item.level().1)*100)) %"
-        progress()
+        //print(item.level().0,item.level().1)
+        //perLabel.text = "\(Int((item.level().0/item.level().1)*100)) %"
+        //progress()
     }
     
 }
